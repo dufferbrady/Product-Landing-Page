@@ -3,7 +3,7 @@
 /* Orange #FB6F10 hsl(24, 97%, 52%) */
 
 body {
-    background-color: hsla(240, 50%, 80%, 40%);
+    background-color: hsla(240, 50%, 70%, 30%);
     margin: 0;
 }
 
@@ -68,7 +68,8 @@ body {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
+    letter-spacing: 0.5px;
 }
 
 .nav-link:hover {
@@ -129,7 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(240, 70%, 65%);
+    background-color: hsl(240, 70%, 75%);
     width: 100%;
     margin-bottom: 5%;
     margin-left: auto;
@@ -137,7 +138,7 @@ body {
 }
 
 .featureRow {
-    background-color: hsl(240, 70%, 50%);
+    background-color: hsl(240, 50%, 50%);
     color: #EEE;
     display: flex;
     flex-flow: column nowrap;
@@ -153,6 +154,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2.5%;
 }
 
 .icon {
@@ -169,7 +171,8 @@ body {
 
 .feature-header {
     margin-bottom: 1.5%;
-    color: hsl(24, 100%, 60%);
+    margin-top: 3.5%;
+    color: white;
     font-size: 2em;
     letter-spacing: 1.5px;
 }
@@ -216,38 +219,43 @@ body {
 }
 
 .video {
-    background-color: hsl(24, 100%, 60%);
+    background-color: hsl(240, 50%, 50%);
     padding: 2.5%;
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 5px;
 }
 
-.priceRow {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin: 1.25% 10%;
-    /* background: linear-gradient(to left, #8E92F9, #2F3293); */
-    background-color: hsl(30, 90%, 50%);
-    color: #2F3293;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 2% 2.5%;
-    border-radius: 10px;
-}
-
-#topPriceRow {
-    margin-top: 2.5%;
-}
-
 #prices {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 75vw;
-    margin: 0 auto;
+    width: 100vw;
+    background-color: hsl(240, 70%, 75%);
+    padding-bottom: 5%;
+}
+
+#menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 17.5%);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(15% auto);
+    justify-content: center;
+}
+
+.priceRow {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.25%;
+    /* background: linear-gradient(to left, #8E92F9, #2F3293); */
     background-color: hsl(240, 50%, 50%);
-    border-radius: 15px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2% 2.5%;
+    border-radius: 10px;
 }
 
 #price-header {
@@ -259,30 +267,33 @@ body {
     text-align: center;
 }
 
-.washFeatures {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
+.washName {
+    font-size: 1.75em;
+    letter-spacing: 1.5px;
+    font-weight: 400;
 }
 
-.washFeatureTitle {
-    margin: 2% 0;
+.washfeatures {
+    width: 70%;
 }
 
 .washDetails {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    font-size: 110%;
+    justify-content: space-between;
+    padding: 2.5%;
+    width: 100%;
+    font-size: 1em;
+}
+
+.washProperty {
+    margin: 2.5% 0;
 }
 
 .washCost {
-    height: 15%;
-    width: 20%;
-    background-color: #2F3293;
+    width: 45%;
+    background-color: hsl(24, 100%, 60%);
     color: white;
     display: flex;
     flex-direction: row;
@@ -290,6 +301,24 @@ body {
     align-items: center;
     border-radius: 10px;
     font-size: 2em;
+    padding: 2.5%;
+}
+
+.read-features {
+    background-color: hsl(24, 100%, 60%);
+    border: none;
+    padding: 2.5%;
+    width: 70%;
+    color: white;
+    margin: 10% 0 2.5% 0;
+    border-radius: 5px;
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.washDetails {
+    padding: 0;
 }
 
 #contact {
@@ -311,10 +340,6 @@ body {
 #contact-header {
     color: #FD1C00;
 }
-
-/* .formInput {
-    color: #FB6F10;
-} */
 
 .rowData {
     display: flex;
@@ -387,10 +412,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-color: #2F3293;
+    background-color: hsl(240, 50%, 50%);
     color: #EEEEEE;
 }
 
+#footer-content {
+    padding-right: 2.5%;
+    padding-bottom: 1.5%;
+}
 
 .footer-items {
     display: flex;
@@ -398,4 +427,12 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 15vw;
+    font-size: 1.2em;
+}
+
+.nav-link-footer {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    text-transform: capitalize;
 }
