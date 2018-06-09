@@ -127,13 +127,14 @@
             <div class="rowData">
                 <h3 id="price-header">Wash Menu</h3>
             </div>
-            <div class="priceRow" id="topPriceRow">
-                <div class="price-labels">
-                    <h2 class="washName">Standard</h2>
-                </div>
-                <div class="washFeatures">
-                    <div class="washOverview">
-                        <div class="washFeatureTitle">This wash contains the following features</div>
+            <div id="menu">
+                <div class="priceRow">
+                    <div class="price-labels">
+                        <h2 class="washName">Standard</h2>
+                    </div>
+                    <div class="washCost">€8</div>
+                    <button class="read-features">See Features</button>
+                    <div class="washFeatures">
                         <ul style="list-style: none;" class="washDetails">
                             <li class="washProperty">Hand Pre Wash</li>
                             <li class="washProperty">Foam Spray</li>
@@ -141,72 +142,62 @@
                             <li class="washProperty">Twin Jet Dryer</li>
                         </ul>
                     </div>
-                    <div class="washCost">€8</div>
                 </div>
-            </div>
-            <div class="priceRow">
-                <div class="price-labels">
-                    <h2 class="washName">Supreme</h2>
-                </div>
-                <div class="washFeatures">
-                    <div class="washOverview">
-                        <div class="washFeaturesTitle">This wash contains the following features</div>
+                <div class="priceRow">
+                    <div class="price-labels">
+                        <h2 class="washName">Supreme</h2>
+                    </div>
+                    <div class="washCost">€10.50</div>
+                    <button class="read-features">See Features</button>
+                    <div class="washFeatures">
                         <ul style="list-style: none;" class="washDetails">
                             <li class="washProperty">All Standard Wash Features</li>
                             <li class="washProperty">Wheel Pre Spray</li>
                             <li class="washProperty">Wheel & Sill Wash</li>
                         </ul>
                     </div>
-                    <div class="washCost">€10.50</div>
                 </div>
-            </div>
-            <div class="priceRow">
-                <div class="price-labels">
-                    <h2 class="washName">Supreme Plus</h2>
-                </div>
-                <div class="washFeatures">
-                    <div class="washOverview">
-                        <div class="washFeatureTitle">This wash contains the following features</div>
+                <div class="priceRow">
+                    <div class="price-labels">
+                        <h2 class="washName">Supreme Plus</h2>
+                    </div>
+                    <div class="washCost">€12.50</div>
+                    <button class="read-features">See Features</button>
+                    <div class="washFeatures">
                         <ul style="list-style: none;" class="washDetails">
-                            <li class="washFeatureTitle">This wash contains the following features</li>
                             <li class="washProperty">All Supreme Wash Features</li>
                             <li class="washProperty">6 Joint Jet Stream</li>
                             <li class="washProperty">High Gloass Wax</li>
                         </ul>
                     </div>
-                    <div class="washCost">€12.50</div>
                 </div>
-            </div>
-            <div class="priceRow">
-                <div class="price-labels">
-                    <h2 class="washName">Platinum</h2>
-                </div>
-                <div class="washFeatures">
-                    <div class="washOverview">
-                        <div class="washFeatureTitle">This wash contains the following features</div>
+                <div class="priceRow">
+                    <div class="price-labels">
+                        <h2 class="washName">Platinum</h2>
+                    </div>
+                    <div class="washCost">€14.50</div>
+                    <button class="read-features">See Features</button>
+                    <div class="washFeatures">
                         <ul style="list-style: none;" class="washDetails">
                             <li class="washProperty">All Supreme Plus Wash Features</li>
                             <li class="washProperty">Foam Wall</li>
                             <li class="washProperty">Underbody Wash</li>
                         </ul>
                     </div>
-                    <div class="washCost">€14.50</div>
                 </div>
-            </div>
-            <div class="priceRow">
-                <div class="price-labels">
-                    <h2 class="washName">Platinum Plus</h2>
-                </div>
-                <div class="washFeatures">
-                    <div class="washOverview">
-                        <div class="washFeatureTitle">This wash contains the following features</div>
+                <div class="priceRow">
+                    <div class="price-labels">
+                        <h2 class="washName">Platinum Plus</h2>
+                    </div>
+                    <div class="washCost">€16</div>
+                    <button class="read-features">See Features</button>
+                    <div class="washFeatures">
                         <ul style="list-style: none;" class="washDetails">
                             <li class="washProperty">All Platinum Wash Features</li>
                             <li class="washProperty">Polishing Agent</li>
                             <li class="washProperty">Buffing Station</li>
                         </ul>
                     </div>
-                    <div class="washCost">€16</div>
                 </div>
             </div>
         </section>
@@ -254,12 +245,14 @@
         </section>
     </div>
     <section class="footer">
-        <ul style="list-style: none;" class="footer-items">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <span>Copyright 2018, Premier Car Washes</span>
+        <div id="footer-content">
+            <ul style="list-style: none;" class="footer-items">
+                <li><a class="nav-link-footer" href="#">Privacy</a></li>
+                <li><a class="nav-link-footer"href="#">Terms</a></li>
+                <li><a class="nav-link-footer"href="#">Contact</a></li>
+            </ul>
+            <span id="footer-copyright">Copyright 2018, Premier Car Washes</span>
+        </div>
     </section>
     
     <!-- <script
