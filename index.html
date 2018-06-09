@@ -10,53 +10,146 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 </head>
 <body>
-    <header id="header">Premium Car Wash
-        <div class="image">
-            <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14240720.jpg" alt="Car Wash Logo" id="header-img">
-        </div>
-        <nav id="nav-bar">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#prices" class="nav-link">Price Plans</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-    </header>
+    <div class="headerContainer">
+        <header id="header">
+            <!-- <div class="nav-title">Premium Car Wash</div> -->
+            <div class="image">
+                <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14240720.jpg" alt="Car Wash Logo" id="header-img">
+            </div>
+            <nav id="nav-bar">
+                <a href="#about" class="nav-link"><span class="smallWord">our</span><br><span class="largeWord">features</span></a>
+                <a href="#prices" class="nav-link"><span class="smallWord">Clean</span><br><span class="largeWord">offers</span></a>
+                <a href="#location" class="nav-link"><span class="smallWord">Wash</span><br><span class="largeWord">locator</span></a>
+                <a href="#contact" class="nav-link"><span class="smallWord">Send a</span><br><span class="largeWord">message</span></a>
+            </nav>
+        </header>
+    </div>
     <div class="container">
         <section id="about">
             <h1 class="title">Premium Car Washes</h1>
             <div id="background">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et justo porttitor dui convallis aliquet non id ex. Sed elementum odio ac nulla varius, non maximus nisl sodales. Nam in ante augue. Sed tincidunt semper orci, id varius nisi consequat eget. Proin maximus neque in imperdiet ornare. Vivamus vulputate vehicula turpis, id consequat diam. Nunc ut commodo mauris, et maximus nibh. Sed tincidunt varius felis, ut molestie mi convallis a. Praesent ac mauris mi. Aliquam commodo justo a sem sollicitudin luctus. Donec a rhoncus lorem, eget facilisis ante. Donec viverra lectus risus, in volutpat sapien lacinia nec.</p>
+                <div class="featureRow">
+                    <div class="feature-label">
+                        <div class="icon">Icon</div>
+                    </div>
+                    <div class="featureTab">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis laboriosam assumenda, voluptatibus earum numquam tempore doloribus similique voluptatem pariatur placeat ducimus, saepe quam molestiae ut doloremque incidunt. Voluptates, iure quod.</p>
+                    </div>
+                </div>
+                <div class="featureRow">
+                    <div class="feature-label">
+                        <div class="icon">Icon</div>
+                    </div>
+                    <div class="featureTab">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio, labore commodi eum obcaecati perferendis possimus dolorum itaque quod. Maxime saepe labore vitae officia dolore delectus reprehenderit ea commodi quos?</p>
+                    </div>
+                </div>
+                <div class="featureRow">
+                    <div class="feature-label">
+                        <div class="icon">Icon</div>
+                    </div>
+                    <div class="featureTab">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi maiores ipsa delectus repellat quidem amet, eligendi fugit voluptatibus nulla natus saepe, et recusandae aut! Eum, soluta! Reiciendis, minus voluptatibus!</p>
+                    </div>
+                </div>
+                <div class="featureRow">
+                    <div class="feature-label">
+                        <div class="icon">Icon</div>
+                    </div>
+                    <div class="featureTab">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum rem impedit culpa mollitia fugit accusantium iusto. Molestias accusamus harum in, tenetur rem maiores, ipsam, consectetur temporibus veritatis provident obcaecati?</p>
+                    </div>
+                </div>
             </div>
             <div class="video">
                 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/rS0gX_rYudg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </section>
         <section id="prices">
-            <div class="priceRow">
-                <div class="labels">
-                    <h2 class="washName">Wash 1</h2>
+            <div class="rowData">
+                <h3 id="price-header">Wash Menu</h3>
+            </div>
+            <div class="priceRow" id="topPriceRow">
+                <div class="price-labels">
+                    <h2 class="washName">Standard</h2>
                 </div>
-                <ul style="list-style: none;" class="washDetails">
-                    <li class="washFeatures">This wash contains the following features</li>
-                    <li class="washCost">€8</li>
-                </ul>
+                <div class="washFeatures">
+                    <div class="washOverview">
+                        <div class="washFeatureTitle">This wash contains the following features</div>
+                        <ul style="list-style: none;" class="washDetails">
+                            <li class="washProperty">Hand Pre Wash</li>
+                            <li class="washProperty">Foam Spray</li>
+                            <li class="washProperty">Soft Textile Wash</li>
+                            <li class="washProperty">Twin Jet Dryer</li>
+                        </ul>
+                    </div>
+                    <div class="washCost">€8</div>
+                </div>
             </div>
             <div class="priceRow">
-                <div class="labels">
-                    <h2 class="washName">Wash 2</h2>
+                <div class="price-labels">
+                    <h2 class="washName">Supreme</h2>
                 </div>
-                <ul style="list-style: none;" class="washDetails">
-                    <li class="washFeatures">This wash contains the following features</li>
-                    <li class="washCost">€10</li>
-                </ul>
+                <div class="washFeatures">
+                    <div class="washOverview">
+                        <div class="washFeaturesTitle">This wash contains the following features</div>
+                        <ul style="list-style: none;" class="washDetails">
+                            <li class="washProperty">All Standard Wash Features</li>
+                            <li class="washProperty">Wheel Pre Spray</li>
+                            <li class="washProperty">Wheel & Sill Wash</li>
+                        </ul>
+                    </div>
+                    <div class="washCost">€10.50</div>
+                </div>
             </div>
             <div class="priceRow">
-                <div class="labels">
-                    <h2 class="washName">Wash 2</h2>
+                <div class="price-labels">
+                    <h2 class="washName">Supreme Plus</h2>
                 </div>
-                <ul style="list-style: none;" class="washDetails">
-                    <li class="washFeatures">This wash contains the following features</li>
-                    <li class="washCost">€12</li>
-                </ul>
+                <div class="washFeatures">
+                    <div class="washOverview">
+                        <div class="washFeatureTitle">This wash contains the following features</div>
+                        <ul style="list-style: none;" class="washDetails">
+                            <li class="washFeatureTitle">This wash contains the following features</li>
+                            <li class="washProperty">All Supreme Wash Features</li>
+                            <li class="washProperty">6 Joint Jet Stream</li>
+                            <li class="washProperty">High Gloass Wax</li>
+                        </ul>
+                    </div>
+                    <div class="washCost">€12.50</div>
+                </div>
+            </div>
+            <div class="priceRow">
+                <div class="price-labels">
+                    <h2 class="washName">Platinum</h2>
+                </div>
+                <div class="washFeatures">
+                    <div class="washOverview">
+                        <div class="washFeatureTitle">This wash contains the following features</div>
+                        <ul style="list-style: none;" class="washDetails">
+                            <li class="washProperty">All Supreme Plus Wash Features</li>
+                            <li class="washProperty">Foam Wall</li>
+                            <li class="washProperty">Underbody Wash</li>
+                        </ul>
+                    </div>
+                    <div class="washCost">€14.50</div>
+                </div>
+            </div>
+            <div class="priceRow">
+                <div class="price-labels">
+                    <h2 class="washName">Platinum Plus</h2>
+                </div>
+                <div class="washFeatures">
+                    <div class="washOverview">
+                        <div class="washFeatureTitle">This wash contains the following features</div>
+                        <ul style="list-style: none;" class="washDetails">
+                            <li class="washProperty">All Platinum Wash Features</li>
+                            <li class="washProperty">Polishing Agent</li>
+                            <li class="washProperty">Buffing Station</li>
+                        </ul>
+                    </div>
+                    <div class="washCost">€16</div>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -69,7 +162,7 @@
                         <label for="name" id="name-label">Name:</label>
                     </div> -->
                     <div class="rowRight">
-                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="name" placeholder="Name" class="formInput" required>
                     </div>
                 </div>
                 <div class="rowData">
@@ -77,7 +170,7 @@
                         <label for="email" id="email-label">Email:</label>
                     </div> -->
                     <div class="rowRight">
-                        <input type="email" id="email" placeholder="Email" required name="email">
+                        <input type="email" id="email" placeholder="Email" required name="email" class="formInput">
                     </div>
                 </div>
                 <div class="rowData">
@@ -85,7 +178,7 @@
                         <label for="email" id="email-label">Email:</label>
                     </div> -->
                     <div class="rowRight">
-                        <input type="phone" id="phone" placeholder="Phone Number (Optional)">
+                        <input type="phone" id="phone" placeholder="Phone Number (Optional)" class="formInput">
                     </div>
                 </div>
                 <div class="rowData">
@@ -93,7 +186,7 @@
                         <label for="textMessage" id="message-label">Message:</label>
                     </div> -->
                     <div class="rowRight">
-                        <textarea name="message" id="message" cols="35" rows="5" placeholder="Enter Message"></textarea>
+                        <textarea name="message" id="message" cols="35" rows="5" placeholder="Enter Message" class="formInput"></textarea>
                     </div>
                 </div>
                 <div class="rowData" id="submit-button">
@@ -102,8 +195,21 @@
             </form>
         </section>
     </div>
+    <section class="footer">
+        <ul style="list-style: none;" class="footer-items">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2018, Premier Car Washes</span>
+    </section>
     
+    <!-- <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 </html>
