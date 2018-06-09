@@ -118,9 +118,10 @@ body {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 30%);
     grid-gap: 2em;
     grid-auto-rows: minmax(15%, auto);
+    justify-content: center;
 }
 
 #about {
@@ -128,7 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(240, 50%, 50%);
+    background-color: hsl(240, 70%, 65%);
     width: 100%;
     margin-bottom: 5%;
     margin-left: auto;
@@ -136,34 +137,16 @@ body {
 }
 
 .featureRow {
-    background-color: hsl(24, 100%, 60%);
+    background-color: hsl(240, 70%, 50%);
     color: #EEE;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2.5%;
+    margin: 0 auto;
+    border-radius: 20px;
 }
-
-/* #featureRow-1 {
-    grid-column: 2/3;
-    grid-row: 1;
-}
-
-#featureRow-2 {
-    grid-column: 3/4;
-    grid-row: 1;
-}
-
-#featureRow-3 {
-    grid-column: 2/3;
-    grid-row: 2;
-}
-
-#featureRow-4 {
-    grid-column: 3/4;
-    grid-row: 2;
-} */
 
 .feature-label {
     width: 20%;
@@ -173,8 +156,9 @@ body {
 }
 
 .icon {
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin: 0 auto;
+    color: hsl(24, 100%, 65%);
 }
 
 .featureTab {
@@ -184,17 +168,59 @@ body {
 }
 
 .feature-header {
-    margin-bottom: 0.5%;
+    margin-bottom: 1.5%;
+    color: hsl(24, 100%, 60%);
+    font-size: 2em;
+    letter-spacing: 1.5px;
+}
+
+.read-more {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background-color: hsl(24, 100%, 60%);
+    border: none;
+    width: 35%;
+    padding: 2.5% 0;
+    margin: 2.5% 0;
+    border-radius: 5px;
+    font-size: 1.25em;
 }
 
 .feature-points {
     padding: 0;
-    margin-top: 1%;
+    margin-top: 0%;
 }
 
 .list-item {
     letter-spacing: 0.25px;
-    margin: 2.5% 0;
+    margin: 5% 2%;
+    font-size: 1em;
+}
+
+.list-item-top {
+    letter-spacing: 0.25px;
+    margin: 2.5% 2% 5% 2%;
+    font-size: 1em;
+
+}
+
+#video-header {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    margin-bottom: 5%;
+}
+
+.video {
+    background-color: hsl(24, 100%, 60%);
+    padding: 2.5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
 }
 
 .priceRow {
