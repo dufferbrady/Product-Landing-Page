@@ -32,7 +32,7 @@ body {
     width: 7em;
     height: auto;
     position: relative;
-    left: -2.5%;
+    /* left: 10%; */
 }
 
 .image img {
@@ -48,11 +48,12 @@ body {
 #nav-bar {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 55vw;
+    width: 60vw;
     text-decoration: none;
     position: relative;
+
 }
 
 .nav-title {
@@ -63,17 +64,22 @@ body {
 .nav-link {
     color: white;
     text-decoration: none;
-    width: 10em;
     text-align: left;
     text-transform: uppercase;
-    padding: 0 2.5%;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start; */
+    align-items: flex-start
 }
 
 .nav-link:hover {
-    color: #FFF;
+    color: hsla(240, 50%, 80%, 70%);
+}
+
+.nav-link-words {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-right: 10%;
 }
 
 .smallWord {
@@ -86,6 +92,13 @@ body {
     font-size: 2em;
     font-weight: 900;
     color: white;
+    width: 100%;
+}
+
+.nav-icon {
+    font-size: 2em;
+    margin: auto;
+    padding-left: 7.5%;
 }
 
 .container {
@@ -114,8 +127,26 @@ body {
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
-    color: #FB6F10;
     border-radius: 15px;
+}
+
+.featureRow {
+    background-color: #FB6F10;
+    color: #EEE;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 2.5%;
+    padding: 2.5%;
+}
+
+.feature-label {
+    width: 20%;
+}
+
+.icon {
+    font-size: 2.5em;
+    margin: 0 auto;
 }
 
 .priceRow {
