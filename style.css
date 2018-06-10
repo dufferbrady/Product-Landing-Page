@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 15vh;
-    position: relative;
+    position: fixed;
     top: 5%;
     left: 0;
     display: flex;
@@ -45,7 +45,7 @@ body {
 }
 
 
-#nav-bar {
+#nav-bar1 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -53,7 +53,45 @@ body {
     width: 45vw;
     text-decoration: none;
     position: relative;
+}
 
+@media screen and (max-width: 992px) {
+    #nav-bar1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 65vw;
+        text-decoration: none;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-bar1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70vw;
+        text-decoration: none;
+        position: relative;
+    }
+    .nav-title {
+        margin-left: 2.5%;
+        width: 15vw;
+    }
+    .smallWord {
+        font-size: 0.05em;
+        font-weight: 550;
+        color: white
+    }
+    .largeWord {
+        font-size: 0.25em;
+        font-weight: 900;
+        color: white;
+        width: 50%;
+    }
 }
 
 .nav-title {
@@ -124,6 +162,30 @@ body {
     grid-auto-rows: minmax(15%, auto);
     justify-content: center;
 }
+
+@media screen and (max-width: 992px) {
+    #background {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-gap: 2em;
+        grid-auto-rows: minmax(15%, auto);
+        justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #background {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 65%);
+        grid-gap: 2em;
+        grid-auto-rows: minmax(15%, auto);
+        justify-content: center;
+    }
+  }
 
 #about {
     margin-top: 7.5%;
@@ -314,6 +376,28 @@ hr  {
     justify-content: center;
 }
 
+@media screen and (max-width: 992px) {
+    #menu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 35%);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(15% auto);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 75%);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(15% auto);
+        justify-content: center;
+    }
+}
+
 .priceRow {
     display: flex;
     flex-flow: column nowrap;
@@ -395,7 +479,7 @@ hr  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35vw;
+    width: 40vw;
     background-color: hsl(240, 50%, 50%);
     margin: 2.5% auto;
     border-radius: 1.5%;
@@ -407,6 +491,27 @@ hr  {
     /* color: ; */
 }
 
+@media screen and (max-width: 992px) {
+    #contact-body {
+        width: 65%;
+    }
+    #message {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact-body {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #message {
+        font-size: 0.5em;
+    }
+}
+
 #contact {
     width: 100%;
     background-color: hsl(240, 70%, 75%);
@@ -415,8 +520,8 @@ hr  {
 }
 
 #contact-header {
-    color: hsl(24, 100%, 60%);
-    font-weight: 400;
+    color: white;
+    font-weight: 500;
     letter-spacing: 1.5px;
     margin: 2.5% 0 15% 0;
 }
