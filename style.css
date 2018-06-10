@@ -119,7 +119,7 @@ body {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 30%);
+    grid-template-columns: repeat(2, 35%);
     grid-gap: 2em;
     grid-auto-rows: minmax(15%, auto);
     justify-content: center;
@@ -137,7 +137,7 @@ body {
     margin-right: auto;
 }
 
-.featureRow {
+#featureRow-1 {
     background-color: hsl(240, 50%, 50%);
     color: #EEE;
     display: flex;
@@ -149,6 +149,55 @@ body {
     border-radius: 20px;
     height: auto;
     width: 90%;
+}
+
+#featureRow-2 {
+    background-color: hsl(240, 50%, 50%);
+    color: #EEE;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: auto;
+    width: 90%;
+}
+
+#featureRow-3 {
+    background-color: hsl(240, 50%, 50%);
+    color: #EEE;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: auto;
+    width: 90%;
+}
+
+#featureRow-4 {
+    background-color: hsl(240, 50%, 50%);
+    color: #EEE;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: auto;
+    width: 90%;
+}
+
+hr  {
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, hsla(24, 100%, 60%, 0), hsl(24, 100%, 60%, 0.75), hsl(24, 100%, 60%, 0));
 }
 
 .feature-label {
@@ -169,12 +218,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    display: none;
 }
 
-.featureTab-toggle {
-    display: block;
-}
 
 .feature-header {
     margin-bottom: 1.5%;
@@ -182,6 +227,7 @@ body {
     color: white;
     font-size: 2em;
     letter-spacing: 1.5px;
+    text-align: center;
 }
 
 .read-more {
