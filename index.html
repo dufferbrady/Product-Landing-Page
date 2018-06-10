@@ -67,8 +67,8 @@
                         <i class="fas fa-tint icon"></i>
                     </div>
                     <h2 class="feature-header">Water Purity</h2>
-                    <button class="read-more">Read More</button>
-                    <div class="featureTab">
+                    <button class="read-more" onclick="toggleClass(1)">Read More</button>
+                    <div class="featureTab" id="featureTab-1">
                         <ul style="list-style: none;" class="feature-points">
                             <li class="list-item-top">Our water is treated with a highly advanced water purification system called reverse osmosis or RO.</li>                         
                             <li class="list-item">RO uses a semipermeable membrane and extremly high pressures to cleanse the water of ions, molecules and other larger particles from the water.</li>                         
@@ -80,8 +80,8 @@
                         <i class="fas fa-tint icon"></i>
                     </div>
                     <h2 class="feature-header">Wheel Rim Wash</h2>
-                    <button class="read-more">Read More</button>
-                    <div class="featureTab">
+                    <button class="read-more" onclick="toggleClass(2)">Read More</button>
+                    <div class="featureTab" id="featureTab-2">
                         <ul style="list-style: none;" class="feature-points">
                             <li class="list-item-top">All tyres are washed thoroughly by our trained wash attendants before entering the wash tunnel.</li>
                             <li class="list-item">Once inside the tunnel each wheel is detected and scrubbed by our advanced brush sensor technology.</li>
@@ -94,8 +94,8 @@
                         <i class="far fa-handshake icon"></i>
                     </div>
                     <h2 class="feature-header">Quality Assurance</h2>
-                    <button class="read-more">Read More</button>
-                    <div class="featureTab">
+                    <button class="read-more" onclick="toggleClass(3)">Read More</button>
+                    <div class="featureTab" id="featureTab-3">
                         <ul style="list-style: none;" class="feature-points">
                             <li class="list-item-top">All products we use on your vehicle are 100% quality assured and safe to use on all vehicle finishes. </li>
                             <li class="list-item">We use a high foaming wash and wax that gets your car sparkling clean and leave an invisble layer of protection for a superior shine</li>
@@ -108,8 +108,8 @@
                         <i class="fas fa-tint icon"></i>
                     </div>
                     <h2 class="feature-header">Wash Tunnel</h2>
-                    <button class="read-more">Read More</button>
-                    <div class="featureTab">
+                    <button class="read-more" onclick="toggleClass(4)">Read More</button>
+                    <div class="featureTab" id="featureTab-4">
                         <ul style="list-style: none;" class="feature-points">
                             <li class="list-item-top">Our state of the art wash tunnel is over 100 feet long ensuring plenty of time to get your vehicle sparkling clean.</li>
                             <li class="list-item">Our tunnel only takes 7 minutes to get from start to finish ensuring both quality and speed.</li>
@@ -203,7 +203,7 @@
         </section>
         <section id="contact">
             <div id="contact-body">
-                    <div class="rowData">
+                <div class="rowData">
                     <h3 id="contact-header">Contact Us</h3>
                 </div>
                 <form id="form" method="GET" action="https://www.freecodecamp.com/email-submit">
@@ -257,11 +257,7 @@
         </div>
     </section>
     
-    <!-- <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-    </script>
+    <script src="main.js"></script>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
